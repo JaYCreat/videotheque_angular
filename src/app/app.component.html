@@ -4,11 +4,12 @@
 <!-- <app-liste-films [instanceFilm]="film1"></app-liste-films>
 <app-liste-films [instanceFilm]="film2"></app-liste-films>
 <app-liste-films [instanceFilm]="film3"></app-liste-films> -->
-<h1>{{title}}</h1>
-<!-- On utilise la directive *ngFor afin de créer une boucle qui passera dans le contenu de listeFilms (soit le tableau contenant les objets Film) -->
-<!-- L'attribut binding instanceFilm du composant list-films récupère les valeurs des propriétés de chacun des objets au fur et à mesure que la boucle incrémente -->
-<div class="container">
-  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-    <app-liste-films *ngFor="let film of listeFilms" [instanceFilm]="film"></app-liste-films>
-  </div>
-</div>
+
+
+<!-- HEADER -->
+<app-header></app-header>
+<!-- MAIN -->
+<!-- LISTE FILMS -->
+<app-affichage-liste-films></app-affichage-liste-films>
+<!-- FOOTER -->
+<app-footer></app-footer>
